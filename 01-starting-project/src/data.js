@@ -55,9 +55,9 @@ export const EXAMPLES= {
     description:
         'Components accept arbitrary inputs called props. They are like function arguments.',
     code: `
-function Welcome(props) {
-  return <h1>Hello, {props.name}</h1>;
-}`,
+    function Welcome(props) {
+      return <h1>Hello, {props.name}</h1>;
+    }`,
   },
   state: {
     title: 'State',
@@ -67,16 +67,16 @@ function Welcome(props) {
 function Counter() {
   const [isVisible, setIsVisible] = useState(false);
 
-  function handleClick() {
-    setIsVisible(true);
-  }
-
-  return (
-    <div>
-      <button onClick={handleClick}>Show Details</button>
-      {isVisible && <p>Amazing details!</p>}
-    </div>
-  );
-}`,
+    function handleClick() {
+      setIsVisible(true);
+    }
+  
+      return (
+        <div>
+          <button onClick={handleClick}>Show Details</button>
+          {isVisible && <p>Amazing details!</p>}
+        </div>
+      );
+    }`,
   },
 };
