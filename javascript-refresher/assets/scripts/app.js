@@ -48,10 +48,20 @@
 // greetUser("Max", "hello");
 // greetUser("Manuel", "Hallo what's up?")
 
-function greetUser(userName, Message = "Hello boss") {
+/*function greetUser(userName, Message = "Hello boss") {
     console.log(userName);
     console.log(Message);
 }
 
 greetUser("Max");
-greetUser("Manuel", "Hallo what's up?")
+greetUser("Manuel", "Hallo what's up?");*/
+
+function createGreeting (userName, message = "Hello boss") {
+    return "Hi, saya " + userName + ". " + message;
+}
+
+const greeting1 = createGreeting("Max");
+console.log(greeting1);
+
+const greeting2 = createGreeting ("Manuel", "Hallo what's up?");
+console.log(greeting2);
