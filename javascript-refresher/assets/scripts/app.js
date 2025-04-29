@@ -56,7 +56,21 @@
 greetUser("Max");
 greetUser("Manuel", "Hallo what's up?");*/
 
-function createGreeting (userName, message = "Hello boss") {
+/*function greetUser(userName, message = "Hello!") {
+    return "Hi, saya " + userName + ". " + message;
+}
+
+greetUser("Max");
+greetUser("Manuel", "Hallo, what's up?");*/
+
+/*function createGreeting (userName, message = "Hello") {
+    return "Hi, saya " + userName + ". " + message;
+}
+
+console.log(createGreeting("Max"));
+createGreeting("Manuel", "Hallo what's up?");*/
+
+function createGreeting (userName, message = "Hello") {
     return "Hi, saya " + userName + ". " + message;
 }
 
