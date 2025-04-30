@@ -70,7 +70,7 @@ greetUser("Manuel", "Hallo, what's up?");*/
 console.log(createGreeting("Max"));
 createGreeting("Manuel", "Hallo what's up?");*/
 
-function createGreeting (userName, message = "Hello") {
+/*function createGreeting (userName, message = "Hello") {
     return "Hi, saya " + userName + ". " + message;
 }
 
@@ -78,4 +78,11 @@ const greeting1 = createGreeting("Max");
 console.log(greeting1);
 
 const greeting2 = createGreeting ("Manuel", "Hallo what's up?");
-console.log(greeting2);
+console.log(greeting2);*/
+
+// () => {
+
+export default (userName, message) => {
+    console.log('Hello');
+    return userName + message;
+}
