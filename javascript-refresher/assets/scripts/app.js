@@ -22,31 +22,31 @@
 // if (10 === 10)
 //     console.log("work");
 
-// function greet() {
-//     console.log("Hello World")
-// }
-//
-// greet();
-// greet();
-// greet();
-// greet();
-// greet();
+/*function greet() {
+    console.log("Hello World")
+}
 
-// function greet(userName, Message) {
-//     console.log(userName);
-//     console.log(Message);
-// }
-//
-// greet();
+greet();
+greet();
+greet();
+greet();
+greet();*/
+
+/*function greet(userName, message) {
+    console.log(userName);
+    console.log(message);
+}
+
+greet();*/
 
 
-// function greetUser(userName, Message) {
-//     console.log(userName);
-//     console.log(Message);
-// }
-//
-// greetUser("Max", "hello");
-// greetUser("Manuel", "Hallo what's up?")
+/*function greetUser(userName, message) {
+    console.log(userName);
+    console.log(message);
+}
+
+greetUser("Max", "hello");
+greetUser("Manuel", "Hallo what's up?")*/
 
 /*function greetUser(userName, Message = "Hello boss") {
     console.log(userName);
@@ -111,7 +111,7 @@ console.log(user.name);
 user.greet();*/
 
 
-const user = {
+/*const user = {
     name: "Max",
     age: 34,
     greet() {
@@ -137,4 +137,27 @@ class User {
 
 const user1 = new User("Manuel", 35);
 console.log(user1);
-user1.greet();
+user1.greet();*/
+
+const hobbies = ["Sports", "Cooking", "Reading"];
+console.log(hobbies[0]);
+
+hobbies.push("Working");
+console.log(hobbies);
+
+/*
+const index = hobbies.findIndex((item)=>{
+    return item === "Sports";
+});
+
+console.log(index);*/
+
+const index = hobbies.findIndex((item) => item === "Sports");
+
+console.log(index);
+
+/*const editHobbies = hobbies.map((item) => item + "!");
+console.log(editHobbies);*/
+
+const editHobbies = hobbies.map((item) => ({text: item}));
+console.log(editHobbies);
