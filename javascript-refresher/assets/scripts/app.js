@@ -145,8 +145,7 @@ console.log(hobbies[0]);
 hobbies.push("Working");
 console.log(hobbies);
 
-/*
-const index = hobbies.findIndex((item)=>{
+/*const index = hobbies.findIndex((item)=>{
     return item === "Sports";
 });
 
@@ -156,8 +155,23 @@ const index = hobbies.findIndex((item) => item === "Sports");
 
 console.log(index);
 
-/*const editHobbies = hobbies.map((item) => item + "!");
-console.log(editHobbies);*/
+/*
+const editHobbies = hobbies.map((item) => item + "!");
+
+console.log(editHobbies);
+*/
 
 const editHobbies = hobbies.map((item) => ({text: item}));
+
 console.log(editHobbies);
+
+
+function transformToObjects(numberArray) {
+    // Todo: Add your logic
+    // should return an array of objects
+    return numberArray.map(num => ({val: num}))
+}
+
+const input = [1, 2, 3];
+const output = transformToObjects(input);
+console.log(output); // [{ val: 1 }, { val: 2 }, { val: 3 }]
