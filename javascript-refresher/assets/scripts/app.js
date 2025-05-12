@@ -176,21 +176,41 @@ const input = [1, 2, 3];
 const output = transformToObjects(input);
 console.log(output); // [{ val: 1 }, { val: 2 }, { val: 3 }]*/
 
-const [firstName, lastName] = ["Max", "Schwarrzmuller"];
+// const [firstName, lastName] = ["Max", "Schwarrzmuller"];
+//
+// // const firstName = userNameData[0];
+// // const lastName = userNameData[1];
+//
+// console.log(firstName);
+// console.log(lastName);
+//
+// const {name: userName, age} = {
+//     name: "Max",
+//     age: 34
+// };
+//
+// // const name = user.name;
+// // const age = user.age;
+//
+// console.log(userName);
+// console.log(age);
 
-// const firstName = userNameData[0];
-// const lastName = userNameData[1];
-
-console.log(firstName);
-console.log(lastName);
-
-const {name: userName, age} = {
+const hobbies = ["Sports", "Cooking"];
+const user = {
     name: "Max",
     age: 34
 };
 
-// const name = user.name;
-// const age = user.age;
+const newHobbies = ["Reading"];
 
-console.log(userName);
-console.log(age);
+// const mergedHobbies = [hobbies, newHobbies];
+const mergedHobbies = [...hobbies, ...newHobbies];
+
+console.log(mergedHobbies);
+
+const extendedUser = {
+    isAdmin: true,
+    ...user
+};
+
+console.log(extendedUser);
