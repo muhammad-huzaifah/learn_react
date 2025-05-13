@@ -195,22 +195,42 @@ console.log(output); // [{ val: 1 }, { val: 2 }, { val: 3 }]*/
 // console.log(userName);
 // console.log(age);
 
-const hobbies = ["Sports", "Cooking"];
-const user = {
-    name: "Max",
-    age: 34
-};
+// const hobbies = ["Sports", "Cooking"];
+// const user = {
+//     name: "Max",
+//     age: 34
+// };
+//
+// const newHobbies = ["Reading"];
+//
+// // const mergedHobbies = [hobbies, newHobbies];
+// const mergedHobbies = [...hobbies, ...newHobbies];
+//
+// console.log(mergedHobbies);
+//
+// const extendedUser = {
+//     isAdmin: true,
+//     ...user
+// };
+//
+// console.log(extendedUser);
 
-const newHobbies = ["Reading"];
 
-// const mergedHobbies = [hobbies, newHobbies];
-const mergedHobbies = [...hobbies, ...newHobbies];
+// const password = prompt("Your password");
+//
+// if (password === "Hello") {
+//     console.log("Hello works");
+// } else if (password === "hello") {
+//     console.log("hello works");
+// } else  {
+//     console.log("Access non granted.")
+// }
+//
+// const hobbies = ["Sports", "Cooking"];
+//
+// for (const hobby of hobbies) {
+//     console.log(hobby);
+// }
 
-console.log(mergedHobbies);
-
-const extendedUser = {
-    isAdmin: true,
-    ...user
-};
-
-console.log(extendedUser);
+const list = document.querySelector("ul");
+list.remove();
