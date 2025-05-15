@@ -235,22 +235,31 @@ console.log(output); // [{ val: 1 }, { val: 2 }, { val: 3 }]*/
 // const list = document.querySelector("ul");
 // list.remove();
 
-function handleTimeout() {
-    console.log("Timeout!");
+// function handleTimeout() {
+//     console.log("Timeout!");
+// }
+//
+// const handleTimeout2 = () => {
+//     console.log("Timeout... again!");
+// }
+//
+// setTimeout(handleTimeout, 2000);
+// setTimeout(handleTimeout2, 3000);
+// setTimeout(()=>{
+//     console.log("More timing out...");
+// }, 4000)
+//
+// function greeter(greetFn) {
+//     greetFn();
+// }
+//
+// greeter(() => console.log("Hi"));
+
+function init() {
+    function greet() {
+        console.log("Hi!");
+    }
+    greet();
 }
 
-const handleTimeout2 = () => {
-    console.log("Timeout... again!");
-}
-
-setTimeout(handleTimeout, 2000);
-setTimeout(handleTimeout2, 3000);
-setTimeout(()=>{
-    console.log("More timing out...");
-}, 4000)
-
-function greeter(greetFn) {
-    greetFn();
-}
-
-greeter(() => console.log("Hi"));
+init()
