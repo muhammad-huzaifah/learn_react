@@ -255,11 +255,19 @@ console.log(output); // [{ val: 1 }, { val: 2 }, { val: 3 }]*/
 //
 // greeter(() => console.log("Hi"));
 
-function init() {
-    function greet() {
-        console.log("Hi!");
-    }
-    greet();
-}
+// function init() {
+//     function greet() {
+//         console.log("Hi!");
+//     }
+//     greet();
+// }
+//
+// init()
 
-init()
+// let userMessage = "Hello";
+// userMessage = userMessage.concat("!!!")
+
+const hobbies = ["Sports", "Cooking"];
+// hobbies = [];
+hobbies.push("Working");
+console.log(hobbies);
