@@ -1,9 +1,7 @@
-export default function TabButton({children, isSelected, ...props}) {
-    console.log('TabButton Component Executing');
+export function TabButton({children})  {
     return (
-    <li>
-        <button className={isSelected ? 'active' : undefined}  {...props}>{children}
-        </button>
-    </li>
+        <li>
+            <button>{children}</button>
+        </li>
     );
 }
