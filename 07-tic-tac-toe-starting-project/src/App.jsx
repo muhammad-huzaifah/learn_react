@@ -1,10 +1,6 @@
-
 function App() {
-  
+  return <p>Coming Soon...</p>
 
-  return (
-    <h1>React Tic-Tac-Toe</h1>
-  )
 }
 
 export default App
