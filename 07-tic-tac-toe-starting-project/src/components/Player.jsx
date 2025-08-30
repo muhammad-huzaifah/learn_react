@@ -12,19 +12,19 @@ export default function Player({initialName, symbol}) {
         setPlayerName(event.target.value);
     }
 
-    let edittablePlayerName = <span className="player-name">{playerName}</span>;
+    let editTablePlayerName = <span className="player-name">{playerName}</span>;
 
     if (isEditing) {
-        edittablePlayerName = <input type="text" required value={playerName} onChange={handleChange}/>;
+        editTablePlayerName = <input type="text" required value={playerName} onChange={handleChange}/>;
     }
 
     return (
         <li>
             <span className="player">
-                {edittablePlayerName}
+                {editTablePlayerName}
                    <span className="player-symbol">{symbol}</span>
             </span>
-            <button onClick={handleEditClick}>{isEditing ? 'Save' : 'Edit'}</button>
-    </li> );
+                <button onClick={handleEditClick}>{isEditing ? 'Save' : 'Edit'}</button>
+        </li> );
 
 }
