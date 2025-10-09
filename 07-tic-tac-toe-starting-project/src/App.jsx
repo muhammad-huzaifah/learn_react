@@ -23,7 +23,11 @@ const initialGameBoard =  [
 ];
 
 function App() {
-  const [gameTurns, setGameTurns] = useState([]);
+    const [players, setPlayers] = useState({
+        X: 'Player 1',
+        O: 'Player 2',
+    });
+    const [gameTurns, setGameTurns] = useState([]);
   // const [hasWinner, setHasWinner] = useState(false);
   // const [activePlayer, setActivePlayer] = useState('X');
 
@@ -72,6 +76,13 @@ function App() {
       setGameTurns([]);
   }
 
+  function handlePlayerNameChange(player, newName) {
+      setPlayers(prevPlayers => {
+          return {
+              ...prevPlayers, [symbol]: newName
+          };
+      });
+  }
   return (
     <main>
         <div id="game-container">
