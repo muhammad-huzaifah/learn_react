@@ -20,8 +20,24 @@
       <phpstan_by_interpreter asDefaultInterpreter="true" interpreter_id="9367aa34-e4dd-4312-8436-05de689cff6e" timeout="60000" />
     </PhpStan_settings>
   </component>
+  <component name="PhpCodeSniffer">
+    <phpcs_settings>
+      <phpcs_by_interpreter asDefaultInterpreter="true" interpreter_id="2c8f85b3-80a1-41fe-9f8f-3b780fcead88" timeout="30000" />
+    </phpcs_settings>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.2" />
+  <component name="PhpStan">
+    <PhpStan_settings>
+      <phpstan_by_interpreter asDefaultInterpreter="true" interpreter_id="2c8f85b3-80a1-41fe-9f8f-3b780fcead88" timeout="60000" />
+    </PhpStan_settings>
+  </component>
   <component name="PhpStanOptionsConfiguration">
     <option name="transferred" value="true" />
+  </component>
+  <component name="Psalm">
+    <Psalm_settings>
+      <psalm_fixer_by_interpreter asDefaultInterpreter="true" interpreter_id="2c8f85b3-80a1-41fe-9f8f-3b780fcead88" timeout="60000" />
+    </Psalm_settings>
   </component>
   <component name="Psalm">
     <Psalm_settings>
