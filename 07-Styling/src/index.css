@@ -6,7 +6,7 @@
 }
 
 @theme {
-    --font-pacifico: 'Pacifico', cursive;
+    --font-pacifico: 'Pacifico',    cursive;
 }
 
 
@@ -18,8 +18,3 @@ body {
     background-size: cover;
 }
 
-button {
-    cursor: pointer;
-    background: none;
-    line-height: inherit;
-}
