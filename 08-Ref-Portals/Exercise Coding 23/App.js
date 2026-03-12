@@ -12,11 +12,11 @@ export function App() {
     const email = React.useRef();
 
     function handleSaveData() {
-        const enterdName = name.current.value;
-        const enterdEmail = email.current.value;
+        const enteredName = name.current.value;
+        const enteredEmail = email.current.value;
 
-        userData.name = enterdName;
-        userData.email = email.current.value;
+        userData.name = enteredName;
+        userData.email = enteredEmail;
 
         console.log(userData);
     }
