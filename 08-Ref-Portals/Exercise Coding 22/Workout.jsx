@@ -1,16 +1,16 @@
 import React from 'react';
 
 export default function Workout({ title, description, time, onComplete }) {
-    const timerRef = React.useRef();
+    const timer=React.useRef();
 
     function handleStartWorkout() {
-        timerRef.current = setTimeout(() => {
-            handleStopWorkout();
-        }, time);
-    }
+        // Todo: Start timer
+        timer.current=setTimeout(handleStopWorkout, time);
+        }
 
     function handleStopWorkout() {
-        clearTimeout(timerRef.current);
+        // Todo: Stop timer
+        clearTimeout(timer.current);
         onComplete();
     }
 
