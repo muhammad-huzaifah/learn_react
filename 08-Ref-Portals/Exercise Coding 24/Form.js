@@ -1,6 +1,17 @@
-export default function Form() {
+import React from 'react';
+
+const Form = React.forwardRef(function Form(props, ref) {
+    const form = React.useRef();
+    React.useImperativeHandle(ref, () => {
+        return {
+            clear() {
+                form.current.reset();
+            },
+        };
+    });
+
     return (
-        <form>
+        <form ref={form}>
             <p>
                 <label>Name</label>
                 <input type="text" />
@@ -15,4 +26,6 @@ export default function Form() {
             </p>
         </form>
     );
-}
+});
+
+export default Form;
